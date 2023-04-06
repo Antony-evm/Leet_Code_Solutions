@@ -7,29 +7,16 @@
 # The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.
 
 class Solution:
-    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        candidates.sort()
-        res = []
-        last_pos = len(candidates)-1
+    def combinationSum(self, candidates, target):
+        ret = []
+        self.dfs(candidates, target, [], ret)
+        return ret
     
-        while last_pos>0:
-            if candidates[last_pos]>target:
-                candidates.pop()
-            else:
-                break
-            last_pos -=1
-        if candidates = []:
-            return []
-
-        left = 0
-        second_left = 1
-        carry = 0
-        intermediate_res = []
-        while left<=last_pos:
-            intermediate_res.append(candidates[left])
-            while second_left<=last_pos:
-                if sum(intermediate_res)+candidates[second_left]<target:
-                    intermediate_res.append(candidates[second_left])
-
-
-        return []
+    def dfs(self, nums, target, path, ret):
+        if target < 0:
+            return 
+        if target == 0:
+            ret.append(path)
+            return 
+        for i in range(len(nums)):
+            self.dfs(nums[i:], target-nums[i], path+[nums[i]], ret)
