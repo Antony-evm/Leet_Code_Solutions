@@ -6,7 +6,6 @@
 
 # A subarray is a contiguous subsequence of the array.
 
-
 class Solution:
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
         if len(nums)<3:
@@ -14,17 +13,19 @@ class Solution:
         else:
             diffs = list(starmap(operator.sub,zip(nums[1:],nums)))
             counter = 1
-            total = temp_counter = 0
+            total = 0
 
             for idx in range(1,len(diffs)):
-                if diffs[idx-1]==diffs[idx]:
+                if diffs[idx-1]==diffs[idx] and idx<len(diffs)-1:
                     counter+=1
-                if diffs[idx-1]!=diffs[idx] or idx==len(diffs)-1:
-                    temp_counter = counter
+                elif diffs[idx-1]!=diffs[idx]:
+                    if counter>=2:
+                        total+=counter*(counter-1)//2
                     counter = 1
-                    if temp_counter>=2:
-                        total+=sum([i for i in range(1,temp_counter)])
+                else:
+                    counter+=1
+                    if counter>=2:
+                        total+=counter*(counter-1)//2
                 
-
             return total
 
