@@ -12,3 +12,14 @@ class Solution:
                     dp[i] = max(dp[i],dp[j]+1)
                     ans = max(ans,dp[i])
         
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        lis = 1
+        temp = [nums[0]]
+        for i in range(1, len(nums)):
+            if nums[i] > temp[-1]:
+                temp.append(nums[i])
+                lis += 1
+            else:
+                temp[bisect_left(temp, nums[i])] = nums[i]
+        return lis
