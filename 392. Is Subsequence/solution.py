@@ -5,9 +5,9 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         s_index,t_index,t_len,s_len = 0,0,len(t),len(s)
-
+ 		t_dict = dict.fromkeys(t,True)
         while t_index<t_len and s_index<s_len:
-            if t.find(s[s_index])<0:
+            if not t_dict.get(s[s_index]):
                 return False
             elif t[t_index] == s[s_index]:
                 s_index+=1
