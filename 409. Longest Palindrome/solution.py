@@ -6,5 +6,5 @@ class Solution:
     def longestPalindrome(self, s: str) -> int:      
         length = len(s)
         values = Counter(s)
-        evens = len([i for i in values.values() if i%2==1])
-        return length - evens + 1 if evens>1 else length
+        odds = len([i for i in values.values() if i%2==1])
+        return length - odds + 1 if odds>1 else length
