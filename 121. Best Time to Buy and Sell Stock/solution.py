@@ -6,13 +6,18 @@
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        profit = 0
-        seen = []
-        prices_dict = list(dict.fromkeys(prices))
-        for idx in range(len(prices_dict)):
-            if all([prices_dict[idx]<j for j in seen]):
-                temp_profit = sorted(set(prices[prices.index(prices_dict[idx]):]),reverse=True)[0]-prices_dict[idx]
-                if temp_profit>profit:
-                    profit=temp_profit
-            seen+=[prices_dict[idx]]
-        return profit
+        if len(prices) <= 1:
+            return 0
+        
+        min_price = prices[0]
+        max_profit = 0
+
+        for price in prices:
+            if price < min_price:
+                min_price = price
+            
+            profit = price - min_price
+            if  profit > max_profit:
+                max_profit = profit
+
+        return max_profit
