@@ -13,14 +13,15 @@ class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
         actual_start, covered, res = [], [], []
-        length = len(nums)
         for first_ptr in range(len(nums)):
             first_start = nums[first_ptr]
             if first_start in actual_start:
                 continue
             actual_start.append(first_start)
             covered = []
-            for index in range(first_ptr + 1, len(nums)):
+            for index in range(
+                first_ptr + 1,
+            ):
                 start = nums[index]
                 if start in covered:
                     continue

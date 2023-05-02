@@ -30,7 +30,6 @@ class Solution:
             else:
                 return dfs(s[1:])
 
-        total = []
         dictionary = {str(i): chr(i + 64) for i in range(1, 27)}
 
         return dfs(s) if s and s[0] != "0" else 0

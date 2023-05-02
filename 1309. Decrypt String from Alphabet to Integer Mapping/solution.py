@@ -9,8 +9,6 @@
 
 class Solution:
     def freqAlphabets(self, s: str) -> str:
-        right = 3
-        res = []
         decrypt = ""
         while s != "":
             if len(s) >= 3:
