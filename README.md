@@ -4,7 +4,6 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 
 | # | Title | Solution |
 |---| ----- | -------- |
-
 |1822|[Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) |[Python](./Solutions/1822. Sign of the Product of an Array/solution.py)|
 |1790|[Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) |[Python](./Solutions/1790. Check if One String Swap Can Make Strings Equal/solution.py)|
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) |[Python](./Solutions/1779. Find Nearest Point That Has the Same X or Y Coordinate/solution.py)|
