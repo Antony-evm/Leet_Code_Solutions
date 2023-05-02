@@ -3,7 +3,7 @@
 Taking on Leet Code Problems one at a time. This is my way to practice algorithms, trying to give back to the community. Even though there are plenty of similar repositories, I hope this will help someone eventually.
 
 [SS](Solutions)
-[ss](Solutions/1822. Sign of the Product of an Array)
+[ss](Solutions/1822. Sign of the Product of an Array/)
 
 
 | # | Title | Solution |
