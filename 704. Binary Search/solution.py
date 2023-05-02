@@ -2,8 +2,9 @@
 
 # You must write an algorithm with O(log n) runtime complexity.
 
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        left = bisect.bisect_left(nums,target)
-        right = bisect.bisect_left(nums,target+1)
-        return left if left!=right else -1
+        left = bisect.bisect_left(nums, target)
+        right = bisect.bisect_left(nums, target + 1)
+        return left if left != right else -1

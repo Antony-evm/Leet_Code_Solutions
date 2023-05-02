@@ -11,22 +11,19 @@
 # You must use only standard operations of a stack, which means only push to top, peek/pop from top, size, and is empty operations are valid.
 # Depending on your language, the stack may not be supported natively. You may simulate a stack using a list or deque (double-ended queue) as long as you use only a stack's standard operations.
 
-class MyQueue:
 
+class MyQueue:
     def __init__(self):
-        self.queue=[]
-        
+        self.queue = []
 
     def push(self, x: int) -> None:
-        self.queue.insert(0,x)
+        self.queue.insert(0, x)
 
     def pop(self) -> int:
         return self.queue.pop(-1)
-        
 
     def peek(self) -> int:
         return self.queue[-1]
-        
 
     def empty(self) -> bool:
         return self.queue == []

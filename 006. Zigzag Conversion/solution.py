@@ -5,6 +5,7 @@
 # Y   I   R
 # And then read line by line: "PAHNAPLSIIGYIR"
 
+
 class Solution:
     def convert(self, s: str, numrows: int) -> str:
         if numrows == 1:
@@ -14,19 +15,18 @@ class Solution:
         down = True
         res = []
         for i in s:
-            res.append((line,pos,i))
-            if down and line<numrows-1:
-                line+=1
-            elif down and line == numrows-1:
-                down=False
-                pos+=1
-                line-=1
+            res.append((line, pos, i))
+            if down and line < numrows - 1:
+                line += 1
+            elif down and line == numrows - 1:
+                down = False
+                pos += 1
+                line -= 1
             elif not down and line == 0:
                 down = True
-                line+=1
-            elif not down and line>0:
-                line-=1
-                pos+=1
+                line += 1
+            elif not down and line > 0:
+                line -= 1
+                pos += 1
         res.sort()
-        return ''.join([j[2] for j in res])
-        
+        return "".join([j[2] for j in res])

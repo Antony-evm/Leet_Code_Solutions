@@ -4,19 +4,21 @@
 
 # The Manhattan distance between two points (x1, y1) and (x2, y2) is abs(x1 - x2) + abs(y1 - y2).
 
+
 class Solution:
     def nearestValidPoint(self, x: int, y: int, points: List[List[int]]) -> int:
-        def is_valid(x1,y1,point):
-            return x1==point[0] or y1==point[1]
-        def manhattan(x1,y1,point):
-            return abs(x1-point[0])+abs(y1-point[1])
-        
+        def is_valid(x1, y1, point):
+            return x1 == point[0] or y1 == point[1]
+
+        def manhattan(x1, y1, point):
+            return abs(x1 - point[0]) + abs(y1 - point[1])
+
         min_idx = -1
         min_dst = 100000
-        for idx,point in enumerate(points):
-            if is_valid(x,y,point):
-                dst = manhattan(x,y,point)
-                if dst<min_dst:
+        for idx, point in enumerate(points):
+            if is_valid(x, y, point):
+                dst = manhattan(x, y, point)
+                if dst < min_dst:
                     min_dst = dst
                     min_idx = idx
         return min_idx

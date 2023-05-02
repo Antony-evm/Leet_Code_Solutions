@@ -4,9 +4,11 @@
 
 # Return the maximum area of an island in grid. If there is no island, return 0.
 
+
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         from collections import deque
+
         island = deque()
         islands = []
         areas = []
@@ -14,39 +16,35 @@ class Solution:
             for j in range(len(grid[i])):
                 area = 0
 
-                if [i,j] in areas:
+                if [i, j] in areas:
                     continue
                 else:
-                    areas.append([i,j])
+                    areas.append([i, j])
 
-                if grid[i][j]==1:
-                    island.append([i,j])
+                if grid[i][j] == 1:
+                    island.append([i, j])
                     while island:
                         temp_grid = island[0]
-                        area+=1
+                        area += 1
                         island.popleft()
-                        if temp_grid[0]-1>-1 and [temp_grid[0]-1,temp_grid[1]] not in areas:
-                            if grid[temp_grid[0]-1][temp_grid[1]]==1:
-                                island.append([temp_grid[0]-1,temp_grid[1]])
-                            areas.append([temp_grid[0]-1,temp_grid[1]])
+                        if temp_grid[0] - 1 > -1 and [temp_grid[0] - 1, temp_grid[1]] not in areas:
+                            if grid[temp_grid[0] - 1][temp_grid[1]] == 1:
+                                island.append([temp_grid[0] - 1, temp_grid[1]])
+                            areas.append([temp_grid[0] - 1, temp_grid[1]])
 
-                        if temp_grid[0]+1<len(grid) and [temp_grid[0]+1,temp_grid[1]] not in areas:
-                            if grid[temp_grid[0]+1][temp_grid[1]]==1:
-                                island.append([temp_grid[0]+1,temp_grid[1]])
-                            areas.append([temp_grid[0]+1,temp_grid[1]])
-                        if temp_grid[1]-1>-1  and [temp_grid[0],temp_grid[1]-1] not in areas:
-                            if grid[temp_grid[0]][temp_grid[1]-1]==1:
-                                island.append([temp_grid[0],temp_grid[1]-1])
-                            areas.append([temp_grid[0],temp_grid[1]-1])
-                        if temp_grid[1]+1<len(grid[i]) and [temp_grid[0],temp_grid[1]+1] not in areas:
-                            if grid[temp_grid[0]][temp_grid[1]+1]==1:
-                                island.append([temp_grid[0],temp_grid[1]+1])
-                            areas.append([temp_grid[0],temp_grid[1]+1])
+                        if temp_grid[0] + 1 < len(grid) and [temp_grid[0] + 1, temp_grid[1]] not in areas:
+                            if grid[temp_grid[0] + 1][temp_grid[1]] == 1:
+                                island.append([temp_grid[0] + 1, temp_grid[1]])
+                            areas.append([temp_grid[0] + 1, temp_grid[1]])
+                        if temp_grid[1] - 1 > -1 and [temp_grid[0], temp_grid[1] - 1] not in areas:
+                            if grid[temp_grid[0]][temp_grid[1] - 1] == 1:
+                                island.append([temp_grid[0], temp_grid[1] - 1])
+                            areas.append([temp_grid[0], temp_grid[1] - 1])
+                        if temp_grid[1] + 1 < len(grid[i]) and [temp_grid[0], temp_grid[1] + 1] not in areas:
+                            if grid[temp_grid[0]][temp_grid[1] + 1] == 1:
+                                island.append([temp_grid[0], temp_grid[1] + 1])
+                            areas.append([temp_grid[0], temp_grid[1] + 1])
                     islands.append(area)
-                    
 
         islands.sort()
-        return islands[-1] if len(islands)>0 else 0
-
-
-
+        return islands[-1] if len(islands) > 0 else 0

@@ -2,9 +2,10 @@
 
 # Note that you must do this in-place without making a copy of the array.
 
+
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
-        nums.sort(key=lambda x:x==0)
+        nums.sort(key=lambda x: x == 0)

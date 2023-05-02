@@ -5,8 +5,7 @@
 
 class Solution:
     def interpret(self, command: str) -> str:
-        parser = {'()':'o','(al)':'al'}
+        parser = {"()": "o", "(al)": "al"}
         for i in parser.keys():
-            command = command.replace(i,parser[i])
+            command = command.replace(i, parser[i])
         return command
-        

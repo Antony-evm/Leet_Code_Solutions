@@ -6,7 +6,7 @@
 class Solution:
     def integerBreak(self, n: int) -> int:
         dp = [None, 1]
-        for m in range (2, n + 1):
+        for m in range(2, n + 1):
             j = m - 1
             i = 1
             max_product = 0

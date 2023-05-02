@@ -2,7 +2,6 @@
 
 # A leaf is a node with no children. A left leaf is a leaf that is the left child of another node.
 
- 
 
 # Definition for a binary tree node.
 # class TreeNode:
@@ -18,9 +17,9 @@ class Solution:
             curr = stack.pop(0)
             if curr.left:
                 stack.append(curr.left)
-                if curr.left.left==None and curr.left.right==None:
-                    res+=curr.left.val
+                if curr.left.left == None and curr.left.right == None:
+                    res += curr.left.val
             if curr.right:
                 stack.append(curr.right)
-            
+
         return res

@@ -7,12 +7,13 @@ class Solution:
     def rob(self, nums: List[int]) -> int:
         def solve(left, right):
             dp, dp1, dp2 = 0, 0, 0
-            for i in range(left, right+1):
+            for i in range(left, right + 1):
                 dp = max(dp1, dp2 + nums[i])
                 dp2 = dp1
                 dp1 = dp
             return dp1
-        
+
         n = len(nums)
-        if n == 1: return nums[0]
-        return max(solve(0, n-2), solve(1, n-1))
+        if n == 1:
+            return nums[0]
+        return max(solve(0, n - 2), solve(1, n - 1))

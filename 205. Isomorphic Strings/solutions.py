@@ -4,15 +4,16 @@
 
 # All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
 
+
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         mapper = {}
-        s_copy = ''
-        for idx,char in enumerate(s):
+        s_copy = ""
+        for idx, char in enumerate(s):
             if not mapper.get(char):
                 mapper[char] = t[idx]
-                s_copy += t[idx]                
+                s_copy += t[idx]
             else:
                 s_copy += mapper.get(char)
-                
+
         return s_copy == t and len(mapper.values()) == len(set(mapper.values()))

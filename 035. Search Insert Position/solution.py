@@ -2,6 +2,7 @@
 
 # You must write an algorithm with O(log n) runtime complexity.
 
+
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
-        return bisect_left(nums,target)
+        return bisect_left(nums, target)

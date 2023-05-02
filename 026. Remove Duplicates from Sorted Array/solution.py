@@ -6,15 +6,14 @@
 
 # Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        
         left = 1
-        while left<len(nums):
-            if nums[left]==nums[left-1]:
-                nums[left:] = nums[left+1:]
+        while left < len(nums):
+            if nums[left] == nums[left - 1]:
+                nums[left:] = nums[left + 1 :]
             else:
-                left+=1
-
+                left += 1
 
         return len(nums)

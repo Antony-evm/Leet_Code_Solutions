@@ -6,24 +6,24 @@
 
 # You must write an algorithm with O(log n) runtime complexity.
 
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        l,r = 0,len(nums)-1
+        l, r = 0, len(nums) - 1
         mid = 0
-        while l<r:
-            mid = (l+r)//2
-            if nums[mid]>nums[r]:
-                l = mid+1
+        while l < r:
+            mid = (l + r) // 2
+            if nums[mid] > nums[r]:
+                l = mid + 1
             else:
                 r = mid
         nleft = nums[:r]
         nright = nums[r:]
-        if target>max(nright):
-            l = bisect.bisect_left(nleft,target)
-            r = bisect.bisect_left(nleft,target+1)
-            return - 1 if l==r else l
-        elif target<=max(nright):
-            l = bisect.bisect_left(nright,target)
-            r = bisect.bisect_left(nright,target+1)
-            return - 1 if l==r else l + len(nleft)
-        
+        if target > max(nright):
+            l = bisect.bisect_left(nleft, target)
+            r = bisect.bisect_left(nleft, target + 1)
+            return -1 if l == r else l
+        elif target <= max(nright):
+            l = bisect.bisect_left(nright, target)
+            r = bisect.bisect_left(nright, target + 1)
+            return -1 if l == r else l + len(nleft)

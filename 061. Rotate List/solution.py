@@ -1,5 +1,6 @@
 # Given the head of a linked list, rotate the list to the right by k places.
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -16,14 +17,13 @@ class Solution:
             curr = curr.next
             length += 1
 
-        k = k % length 
+        k = k % length
         curr.next = head
 
         temp = head
         for _ in range(length - k - 1):
             temp = temp.next
-        
+
         answer = temp.next
         temp.next = None
         return answer
-            

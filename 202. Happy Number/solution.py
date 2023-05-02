@@ -7,17 +7,17 @@
 # Those numbers for which this process ends in 1 are happy.
 # Return true if n is a happy number, and false if not.
 
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         results = []
         while True:
-            res = sum([int(i)**2 for i in str(n)])
-            if res==1:
+            res = sum([int(i) ** 2 for i in str(n)])
+            if res == 1:
                 return True
             else:
                 results.append(n)
                 n = res
-                
-            if n in results or n.bit_length()>=32:
+
+            if n in results or n.bit_length() >= 32:
                 return False
-                

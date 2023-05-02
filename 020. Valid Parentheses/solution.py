@@ -8,34 +8,34 @@
 #  1 <= s.length <= 104
 # s consists of parentheses only '()[]{}'.
 
+
 class Solution:
     def isValid(self, s: str) -> bool:
-        def count_occurences(openList:List,closeList:List,s:str)->bool:
-            return all([s.count(openChar)==s.count(closeChar) for openChar,closeChar in zip(openList,closeList)])
-        marker = ''
-   
-        if len(s)%2!=0 | count_occurences('({[',')}]',s) == False:
+        def count_occurences(openList: List, closeList: List, s: str) -> bool:
+            return all([s.count(openChar) == s.count(closeChar) for openChar, closeChar in zip(openList, closeList)])
+
+        marker = ""
+
+        if len(s) % 2 != 0 | count_occurences("({[", ")}]", s) == False:
             return False
         else:
-            s=s[::-1]
-            while s!='':
-                a = s.find(')(')
-                if a>=0:
-                    s = s[:a]+s[a+2:]
-                    marker = 'a'
-                b=s.find('][')
-                if b>=0:
-                    s = s[:b]+s[b+2:]
-                    marker = 'b'
-                c=s.find('}{')
-                if c>=0:
-                    s = s[:c]+s[c+2:]
-                    marker = 'c'
-                if marker == '':
+            s = s[::-1]
+            while s != "":
+                a = s.find(")(")
+                if a >= 0:
+                    s = s[:a] + s[a + 2 :]
+                    marker = "a"
+                b = s.find("][")
+                if b >= 0:
+                    s = s[:b] + s[b + 2 :]
+                    marker = "b"
+                c = s.find("}{")
+                if c >= 0:
+                    s = s[:c] + s[c + 2 :]
+                    marker = "c"
+                if marker == "":
                     return False
                 else:
-                    marker = ''
+                    marker = ""
 
             return True
-
-        

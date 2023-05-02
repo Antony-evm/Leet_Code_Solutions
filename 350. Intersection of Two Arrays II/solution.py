@@ -8,8 +8,8 @@ class Solution:
             x = nums1.count(i)
             y = nums2.count(i)
             t = intersection.count(i)
-            if x>=y:
-                intersection+=[i]*(y-t)
-            elif y>x:
-                intersection+=[i]*(x-t)
+            if x >= y:
+                intersection += [i] * (y - t)
+            elif y > x:
+                intersection += [i] * (x - t)
         return intersection

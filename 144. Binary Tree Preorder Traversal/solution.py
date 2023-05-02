@@ -9,7 +9,7 @@
 #         self.right = right
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if root==None:
+        if root == None:
             return []
         res = []
         stack = [root]
@@ -18,8 +18,7 @@ class Solution:
             curr = stack.pop(0)
             res.append(curr.val)
             if curr.right:
-                stack.insert(0,curr.right)
+                stack.insert(0, curr.right)
             if curr.left:
-                stack.insert(0,curr.left)
+                stack.insert(0, curr.left)
         return res
-        

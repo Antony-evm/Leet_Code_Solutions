@@ -2,12 +2,13 @@
 
 # If there is no common prefix, return an empty string "".
 
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        output = ''
+        output = ""
         for i in zip(*strs):
-            if len(set(i))==1:
-                output +=i[0]
+            if len(set(i)) == 1:
+                output += i[0]
             else:
                 break
         return output

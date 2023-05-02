@@ -7,12 +7,13 @@
 
 # Return signFunc(product)
 
+
 class Solution:
     def arraySign(self, nums: List[int]) -> int:
-        res = list(accumulate(nums,mul))[-1]
+        res = list(accumulate(nums, mul))[-1]
         if res == 0:
             return 0
-        elif res>0:
+        elif res > 0:
             return 1
         else:
-            return -1        
+            return -1

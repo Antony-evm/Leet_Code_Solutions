@@ -8,6 +8,7 @@
 
 # You must write an algorithm that runs in O(log n) time.
 
+
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         l, r = 0, len(nums) - 1

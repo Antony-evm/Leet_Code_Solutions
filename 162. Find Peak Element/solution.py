@@ -6,20 +6,20 @@
 
 # You must write an algorithm that runs in O(log n) time.
 
+
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
-        if len(nums)==1:
+        if len(nums) == 1:
             return 0
-        
-        l,r = 0,len(nums)
-        while l<r-1:   
-            if ((l==0) or (l!=0 and nums[l]>nums[l-1])) and nums[l]>nums[l+1]:
+
+        l, r = 0, len(nums)
+        while l < r - 1:
+            if ((l == 0) or (l != 0 and nums[l] > nums[l - 1])) and nums[l] > nums[l + 1]:
                 return l
             else:
-                if nums[l]<=nums[l+1]:
-                    l+=1
+                if nums[l] <= nums[l + 1]:
+                    l += 1
                 else:
-                    l+=2
+                    l += 2
 
         return l
-        

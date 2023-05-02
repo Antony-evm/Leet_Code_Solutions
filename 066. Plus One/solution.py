@@ -2,23 +2,24 @@
 
 # Increment the large integer by one and return the resulting array of digits.
 
+
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         carry = 1
-        rp = len(digits)-1
+        rp = len(digits) - 1
         res = []
 
-        while rp>=0:
-            num = digits[rp]+carry
-            if num>9:
+        while rp >= 0:
+            num = digits[rp] + carry
+            if num > 9:
                 num = 0
                 carry = 1
             else:
-                carry = 0            
+                carry = 0
 
-            rp-=1
-            res.insert(0,num)
-        
-        if carry==1:
-            res.insert(0,carry)
+            rp -= 1
+            res.insert(0, num)
+
+        if carry == 1:
+            res.insert(0, carry)
         return res

@@ -6,7 +6,7 @@
 
 # Note: The merging process must start from the root nodes of both trees.
 
- 
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -15,7 +15,7 @@
 #         self.right = right
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        t1,t2 = root1,root2
+        t1, t2 = root1, root2
         if not (t1 and t2):
             return t1 or t2
         queue1, queue2 = collections.deque([t1]), collections.deque([t2])
@@ -32,4 +32,3 @@ class Solution:
                 queue2.append(node2.left)
                 queue2.append(node2.right)
         return t1
-

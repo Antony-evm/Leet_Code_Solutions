@@ -3,6 +3,7 @@
 # The number of nodes in the list is in the range [0, 100].
 # 0 <= Node.val <= 100
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -10,9 +11,9 @@
 #         self.next = next
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head == None or head.next==None:
+        if head == None or head.next == None:
             return head
-        
+
         curr = head
         while True:
             first_swap = curr.val
@@ -21,6 +22,6 @@ class Solution:
             curr = curr.next
             curr.val = first_swap
             curr = curr.next
-            if curr== None or curr.next==None:
+            if curr == None or curr.next == None:
                 break
         return head

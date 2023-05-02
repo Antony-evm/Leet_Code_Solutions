@@ -1,4 +1,3 @@
-
 # Given a binary tree
 
 # Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
@@ -15,9 +14,9 @@ class Node:
         self.next = next
 """
 
-class Solution:
-    def connect(self, root: 'Node') -> 'Node':
 
+class Solution:
+    def connect(self, root: "Node") -> "Node":
         node = root
         while node:
             curr = dummy = Node(0)
@@ -30,5 +29,5 @@ class Solution:
                     curr = curr.next
                 node = node.next
             node = dummy.next
-               
+
         return root

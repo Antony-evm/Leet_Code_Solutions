@@ -6,12 +6,11 @@
 
 # If the reshape operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.
 
+
 class Solution:
     def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
-        if len(mat)*len(mat[0])!=r*c:
+        if len(mat) * len(mat[0]) != r * c:
             return mat
         else:
             gen = chain.from_iterable(mat)
             return [[next(gen) for _ in range(c)] for j in range(r)]
-
-            

@@ -4,8 +4,9 @@
 
 # Return the letter that was added to t.
 
+
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         for letter in set(t):
-            if t.count(letter)!=s.count(letter):
+            if t.count(letter) != s.count(letter):
                 return letter

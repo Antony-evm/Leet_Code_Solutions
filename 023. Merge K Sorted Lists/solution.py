@@ -9,6 +9,7 @@
 # lists[i] is sorted in ascending order.
 # The sum of lists[i].length will not exceed 104.
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -17,9 +18,9 @@
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         res = []
-        
+
         for idx in range(len(lists)):
-            while lists[idx]!=None:
+            while lists[idx] != None:
                 res.append(lists[idx].val)
                 lists[idx] = lists[idx].next
         head = ListNode()

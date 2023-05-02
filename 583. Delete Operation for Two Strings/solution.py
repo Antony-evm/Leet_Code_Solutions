@@ -2,6 +2,7 @@
 
 # In one step, you can delete exactly one character in either string.
 
+
 class Solution:
     def minDistance(self, text1: str, text2: str) -> int:
         m, n = map(len, (text1, text2))
@@ -13,4 +14,4 @@ class Solution:
             for j, d in enumerate(text2):
                 prevRow, prevRowPrevCol = dp[j + 1], prevRow
                 dp[j + 1] = prevRowPrevCol + 1 if c == d else max(dp[j], prevRow)
-        return len(text2)+len(text1)-dp[-1]*2
+        return len(text2) + len(text1) - dp[-1] * 2

@@ -14,26 +14,23 @@
 
 # The test cases are generated so that the answer fits in a 32-bit integer.
 
-class Solution:
 
+class Solution:
     def numDecodings(self, s: str) -> int:
         @lru_cache(None)
         def dfs(s):
-            if s and s[0] == '0':
+            if s and s[0] == "0":
                 return 0
             if s == "" or len(s) == 1:
                 return 1
             if dictionary.get(s[0:2]):
                 first = dfs(s[1:])
                 second = dfs(s[2:])
-                return first+second
+                return first + second
             else:
                 return dfs(s[1:])
 
-    
         total = []
-        dictionary = {str(i):chr(i+64) for i in range(1,27)}
+        dictionary = {str(i): chr(i + 64) for i in range(1, 27)}
 
-        return dfs(s) if s and s[0]!='0' else 0
-
-        
+        return dfs(s) if s and s[0] != "0" else 0

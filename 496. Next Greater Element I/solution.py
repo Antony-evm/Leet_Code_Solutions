@@ -6,18 +6,19 @@
 
 # Return an array ans of length nums1.length such that ans[i] is the next greater element as described above.
 
+
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
         res = []
 
         for n1 in nums1:
             idx = nums2.index(n1)
-            if idx==len(nums2)-1:
+            if idx == len(nums2) - 1:
                 res.append(-1)
             else:
                 next_ele = -1
-                for i in range(idx+1,len(nums2)):
-                    if nums2[i]>n1:
+                for i in range(idx + 1, len(nums2)):
+                    if nums2[i] > n1:
                         next_ele = nums2[i]
                         break
                 res.append(next_ele)

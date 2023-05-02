@@ -21,8 +21,9 @@
 #         self.next = next
 # """
 
+
 class Solution:
-    def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+    def connect(self, root: "Optional[Node]") -> "Optional[Node]":
         if not root:
             return root
         cur = root

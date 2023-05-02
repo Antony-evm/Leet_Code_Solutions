@@ -2,6 +2,7 @@
 
 # If there are two middle nodes, return the second middle node.
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -11,15 +12,15 @@ class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         curr = head
         counter = 0
-        while curr!=None:
+        while curr != None:
             curr = curr.next
-            counter+=1
-        
+            counter += 1
+
         curr = head
         i = 0
-        counter = counter//2
-        while i<counter:
+        counter = counter // 2
+        while i < counter:
             curr = curr.next
-            i+=1
-        
+            i += 1
+
         return curr

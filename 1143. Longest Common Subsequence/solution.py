@@ -5,6 +5,7 @@
 # For example, "ace" is a subsequence of "abcde".
 # A common subsequence of two strings is a subsequence that is common to both strings.
 
+
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         m, n = map(len, (text1, text2))
@@ -17,6 +18,3 @@ class Solution:
                 prevRow, prevRowPrevCol = dp[j + 1], prevRow
                 dp[j + 1] = prevRowPrevCol + 1 if c == d else max(dp[j], prevRow)
         return dp[-1]
-        
-        
-

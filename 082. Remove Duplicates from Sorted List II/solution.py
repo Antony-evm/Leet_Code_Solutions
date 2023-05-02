@@ -10,13 +10,13 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head:
             return head
-        
+
         h = ListNode()
         t = h
         curr = head
         val = -101
         while curr.next:
-            if curr.next.val!=curr.val:
+            if curr.next.val != curr.val:
                 t.next = ListNode(curr.val)
                 t = t.next
                 curr = curr.next
@@ -24,8 +24,8 @@ class Solution:
             else:
                 val = curr.val
                 while curr.next:
-                    if curr.val==val:
-                        curr=curr.next
+                    if curr.val == val:
+                        curr = curr.next
                     else:
                         break
 

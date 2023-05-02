@@ -9,26 +9,32 @@
 # Only the filled cells need to be validated according to the mentioned rules.
 
 import itertools
+
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         for row in range(9):
             nrow = [i for i in board[row] if i.isnumeric()]
             if len(set(nrow)) != len(nrow):
                 return False
-        
+
         for col in range(9):
             ncol = []
             for row in range(9):
                 element = board[row][col]
                 if element.isnumeric():
-                    ncol+=[element]
+                    ncol += [element]
             if len(set(ncol)) != len(ncol):
                 return False
-        
+
         step = 3
-        for row in range(0,9,step):
-            for col in range(0,9,step):
-                triangle =[i for i in itertools.chain(*[j[col:col+step] for j in board[row:row+step]]) if i.isnumeric()]
-                if len(triangle)!=len(set(triangle)):
+        for row in range(0, 9, step):
+            for col in range(0, 9, step):
+                triangle = [
+                    i
+                    for i in itertools.chain(*[j[col : col + step] for j in board[row : row + step]])
+                    if i.isnumeric()
+                ]
+                if len(triangle) != len(set(triangle)):
                     return False
         return True

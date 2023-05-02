@@ -2,7 +2,7 @@
 
 # Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
 
- 
+
 """
 # Definition for a Node.
 class Node:
@@ -11,11 +11,12 @@ class Node:
         self.children = children
 """
 
+
 class Solution:
-    def preorder(self, root: 'Node') -> List[int]:
+    def preorder(self, root: "Node") -> List[int]:
         if root is None:
             return []
-        
+
         stack = [root]
         output = []
         while stack:

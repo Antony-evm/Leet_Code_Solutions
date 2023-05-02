@@ -6,19 +6,25 @@
 # Delete a character
 # Replace a character
 
+
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
-        n ,m = len(word1),len(word2)
+        n, m = len(word1), len(word2)
+
         @lru_cache(None)
-        def rec(i,j):
-            if(i==n and j==m): return 0
-            elif(i==n):        return m-j
-            elif(j==m):        return n-i
-            elif(word1[i]==word2[j]):
-                 return rec(i+1,j+1)
+        def rec(i, j):
+            if i == n and j == m:
+                return 0
+            elif i == n:
+                return m - j
+            elif j == m:
+                return n - i
+            elif word1[i] == word2[j]:
+                return rec(i + 1, j + 1)
             else:
-                res = 1+ rec(i,j+1) 
-                res = min(res,1+ rec(i+1,j))
-                res = min( res, 1+ rec(i+1,j+1))
+                res = 1 + rec(i, j + 1)
+                res = min(res, 1 + rec(i + 1, j))
+                res = min(res, 1 + rec(i + 1, j + 1))
             return res
-        return rec(0,0)
+
+        return rec(0, 0)

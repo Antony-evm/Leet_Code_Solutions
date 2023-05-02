@@ -2,10 +2,11 @@
 
 # Return the merged string.
 
+
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        res = ''
-        for l1,l2 in zip_longest(word1,word2):
-            res = res + l1 if l1!=None else res
-            res = res + l2 if l2!=None else res
+        res = ""
+        for l1, l2 in zip_longest(word1, word2):
+            res = res + l1 if l1 != None else res
+            res = res + l2 if l2 != None else res
         return res

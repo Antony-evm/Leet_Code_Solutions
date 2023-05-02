@@ -5,24 +5,25 @@
 # 0 <= digits.length <= 4
 # digits[i] is a digit in the range ['2', '9']
 
+
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         import itertools
-        my_dict = {
-            '2':['a','b','c'],
-            '3':['d','e','f'],
-            '4':['g','h','i'],
-            '5':['j','k','l'],
-            '6':['m','n','o'],
-            '7':['p','q','r','s'],
-            '8':['t','u','v'],
-            '9':['w','x','y','z']
 
+        my_dict = {
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"],
         }
 
-        if len(digits)>0:
+        if len(digits) > 0:
             digits = [my_dict[i] for i in digits]
         else:
             return []
-        
-        return [''.join(sol_set) for sol_set in itertools.product(*digits)]
+
+        return ["".join(sol_set) for sol_set in itertools.product(*digits)]

@@ -10,18 +10,19 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         curr = head
         counter = 0
         temp = head
-        while curr!=None:
-            counter+=1
-            if hasattr(curr,'visited'):
+        while curr != None:
+            counter += 1
+            if hasattr(curr, "visited"):
                 return curr
             else:
                 curr.visited = curr
-            
+
             curr = curr.next
 
         return None

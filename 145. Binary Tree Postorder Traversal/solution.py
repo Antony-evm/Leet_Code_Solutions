@@ -20,4 +20,4 @@ class Solution:
                 if curr.right:
                     stack.appendleft(curr.right)
 
-            return res[::-1]                
+            return res[::-1]

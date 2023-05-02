@@ -2,6 +2,7 @@
 
 # Return the average salary of employees excluding the minimum and maximum salary. Answers within 10-5 of the actual answer will be accepted.
 
+
 class Solution:
     def average(self, salary: List[int]) -> float:
-        return sum(sorted(salary)[1:-1])/(len(salary)-2)
+        return sum(sorted(salary)[1:-1]) / (len(salary) - 2)

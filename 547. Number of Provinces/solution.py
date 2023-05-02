@@ -14,15 +14,17 @@ class Solution:
         stack = deque()
         for i in range(len(isConnected)):
             if not visited.get(i):
-                visited[i]=True
+                visited[i] = True
                 stack.append(i)
                 while stack:
                     curr = stack.popleft()
-                    connections = [idx for idx,val in enumerate(isConnected[curr]) if val == 1 and visited.get(idx,False)==False]
+                    connections = [
+                        idx
+                        for idx, val in enumerate(isConnected[curr])
+                        if val == 1 and visited.get(idx, False) == False
+                    ]
                     for conn in connections:
                         stack.append(conn)
                         visited[conn] = True
-                provinces+=1
+                provinces += 1
         return provinces
-                
-                    

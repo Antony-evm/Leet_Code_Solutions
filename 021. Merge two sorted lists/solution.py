@@ -4,6 +4,7 @@
 
 # Return the head of the merged linked list.
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -13,16 +14,16 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         head = ListNode()
         curr = head
-        while list1!=None and list2!=None:
-            if list1.val<list2.val:
+        while list1 != None and list2 != None:
+            if list1.val < list2.val:
                 curr.next = list1
                 list1 = list1.next
             else:
                 curr.next = list2
                 list2 = list2.next
             curr = curr.next
-        if list1==None:
+        if list1 == None:
             curr.next = list2
-        if list2==None:
+        if list2 == None:
             curr.next = list1
-        return head.next               
+        return head.next

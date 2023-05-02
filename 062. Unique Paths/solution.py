@@ -7,24 +7,25 @@
 
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        
-        return factorial(m+n-2)//(factorial(n-1)*factorial(m-1))
+        return factorial(m + n - 2) // (factorial(n - 1) * factorial(m - 1))
 
 
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         def factorial(m):
-            return list(accumulate([i for i in range(1,m+1)],lambda x,y:x*y))[-1]
-        
-        return factorial(m+n-2)//(factorial(n-1)*factorial(m-1)) if m>1 and n>1 else 1
+            return list(accumulate([i for i in range(1, m + 1)], lambda x, y: x * y))[-1]
+
+        return factorial(m + n - 2) // (factorial(n - 1) * factorial(m - 1)) if m > 1 and n > 1 else 1
+
 
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        return self.paths(m,n)
+        return self.paths(m, n)
 
     @lru_cache(None)
-    def paths(self,m,n):
-        if m < 0 or n < 0: return 0
-        if m==1 and n==1:
+    def paths(self, m, n):
+        if m < 0 or n < 0:
+            return 0
+        if m == 1 and n == 1:
             return 1
-        return self.paths(m-1,n)+self.paths(m,n-1)
+        return self.paths(m - 1, n) + self.paths(m, n - 1)

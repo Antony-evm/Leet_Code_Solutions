@@ -6,6 +6,7 @@
 
 # Return the modified image after performing the flood fill.
 
+
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
         from collections import deque
@@ -14,18 +15,18 @@ class Solution:
         init_color = image[sr][sc]
         if init_color == color:
             return image
-        colored.append((sr,sc))
+        colored.append((sr, sc))
 
         while colored:
             i = colored[0]
             image[i[0]][i[1]] = color
             colored.popleft()
-            if i[0]-1>-1 and image[i[0]-1][i[1]]==init_color:
-                colored.append((i[0]-1,i[1]))
-            if i[0]+1<len(image) and image[i[0]+1][i[1]]==init_color:
-                colored.append((i[0]+1,i[1]))
-            if i[1]-1>-1 and image[i[0]][i[1]-1]==init_color:
-                colored.append((i[0],i[1]-1))
-            if i[1]+1<len(image[i[0]]) and image[i[0]][i[1]+1]==init_color:
-                colored.append((i[0],i[1]+1))
+            if i[0] - 1 > -1 and image[i[0] - 1][i[1]] == init_color:
+                colored.append((i[0] - 1, i[1]))
+            if i[0] + 1 < len(image) and image[i[0] + 1][i[1]] == init_color:
+                colored.append((i[0] + 1, i[1]))
+            if i[1] - 1 > -1 and image[i[0]][i[1] - 1] == init_color:
+                colored.append((i[0], i[1] - 1))
+            if i[1] + 1 < len(image[i[0]]) and image[i[0]][i[1] + 1] == init_color:
+                colored.append((i[0], i[1] + 1))
         return image

@@ -8,10 +8,11 @@
 # -109 <= nums[i] <= 109
 # -109 <= target <= 109
 
+
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
-        actual_start,covered,res = [],[],[]
+        actual_start, covered, res = [], [], []
         length = len(nums)
         for first_ptr in range(len(nums)):
             first_start = nums[first_ptr]
@@ -19,24 +20,24 @@ class Solution:
                 continue
             actual_start.append(first_start)
             covered = []
-            for index in range(first_ptr+1,len(nums)):
+            for index in range(first_ptr + 1, len(nums)):
                 start = nums[index]
                 if start in covered:
                     continue
                 covered.append(start)
-                left,right = index+1,len(nums)-1
-                while left<right:
-                    sum4 = nums[left]+nums[right]+start+first_start-target
-                    if sum4<0:
-                        left+=1
-                    elif sum4>0:
-                        right-=1
+                left, right = index + 1, len(nums) - 1
+                while left < right:
+                    sum4 = nums[left] + nums[right] + start + first_start - target
+                    if sum4 < 0:
+                        left += 1
+                    elif sum4 > 0:
+                        right -= 1
                     else:
-                        out = sorted([first_start,start,nums[left],nums[right]])
+                        out = sorted([first_start, start, nums[left], nums[right]])
                         res.append(out)
-                        left+=1
-                        right-=1
-                        while nums[left]==nums[left-1] and left<right:
-                            left+=1
+                        left += 1
+                        right -= 1
+                        while nums[left] == nums[left - 1] and left < right:
+                            left += 1
 
         return res

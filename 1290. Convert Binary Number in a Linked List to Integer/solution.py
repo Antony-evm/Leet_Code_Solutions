@@ -4,6 +4,7 @@
 
 # The most significant bit is at the head of the linked list.
 
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -11,14 +12,12 @@
 #         self.next = next
 class Solution:
     def getDecimalValue(self, head: ListNode) -> int:
-
         curr = head
-        res = ''
+        res = ""
         int_res = 0
-        while curr!=None:
-            res+=str(curr.val)
+        while curr != None:
+            res += str(curr.val)
             curr = curr.next
-        for idx,i in enumerate(res):
-            int_res+=pow(2,len(res)-1-idx)*int(i)
+        for idx, i in enumerate(res):
+            int_res += pow(2, len(res) - 1 - idx) * int(i)
         return int_res
-

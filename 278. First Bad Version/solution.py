@@ -7,17 +7,17 @@
 # The isBadVersion API is already defined for you.
 # def isBadVersion(version: int) -> bool:
 
+
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        
-        low,high = 1,n
-        if low==high:
+        low, high = 1, n
+        if low == high:
             return low
-        while low<high:
-            mid = (low+high)//2
+        while low < high:
+            mid = (low + high) // 2
             if isBadVersion(mid) == False:
-                low = mid+1
+                low = mid + 1
             elif isBadVersion(mid) == True:
                 high = mid - 1
-        
-        return (high+low)//2 if isBadVersion((high+low)//2)==True else (high+low)//2+1
+
+        return (high + low) // 2 if isBadVersion((high + low) // 2) == True else (high + low) // 2 + 1
