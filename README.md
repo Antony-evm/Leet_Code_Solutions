@@ -2,9 +2,6 @@
 
 Taking on Leet Code Problems one at a time. This is my way to practice algorithms, trying to give back to the community. Even though there are plenty of similar repositories, I hope this will help someone eventually.
 
-[SS](Solutions)
-[ss](Solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array)
-
 
 | # | Title | Solution |
 |---| ----- | -------- |
