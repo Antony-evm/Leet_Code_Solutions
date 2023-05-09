@@ -59,6 +59,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |70|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[Python](/Solutions/070.%20Climbing%20Stairs/solution.py)|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)|[Python](/Solutions/072.%20Edit%20Distance/solution.py)|
 |74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|[Python](/Solutions/074.%20Search%20a%202D%20Matrix/solution.py)|
+|75|[Sort colors](https://leetcode.com/problems/sort-colors)|[Python](/Solutions/075.%20Sort%Colors/solution.py)|
 |78|[Subsets](https://leetcode.com/problems/subsets/)|[Python](/Solutions/078.%20Subsets/solution.py)|
 |79|[Word Search](https://leetcode.com/problems/word-search/)|[Python](/Solutions/079.%20Word%20Search/solution.py)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Python](/Solutions/080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/solution.py)|
