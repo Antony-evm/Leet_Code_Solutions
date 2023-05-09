@@ -64,6 +64,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[Python](/Solutions/080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/solution.py)|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)|[Python](/Solutions/082.%20Remove%20Duplicates%20from%20Sorted%20List%20II/solution.py)|
 |83|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)|[Python](/Solutions/083.%20Remove%20Duplicates%20from%20Sorted%20List/solution.py)|
+|86|[Partition List](https://leetcode.com/problems/partition-list)|[Python](/Solutions/086.%20Partition%20List/solution.py)|
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Python](/Solutions/088.%20Merge%20Sorted%20Array/solution.py)|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/)|[Python](/Solutions/090.%20Subsets%20II/solution.py)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Python](/Solutions/091.%20Decode%20Ways/solution.py)|
