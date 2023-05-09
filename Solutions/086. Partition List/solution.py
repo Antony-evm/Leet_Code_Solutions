@@ -11,12 +11,12 @@ class Solution:
         ptr2 = head_bigger = temp_bigger
         curr = head
         while curr:
-            if curr.val<x:
+            if curr.val < x:
                 head_smaller.next = ListNode(curr.val)
                 head_smaller = head_smaller.next
             else:
                 head_bigger.next = ListNode(curr.val)
                 head_bigger = head_bigger.next
             curr = curr.next
-        head_smaller.next=ptr2.next
+        head_smaller.next = ptr2.next
         return ptr1.next
