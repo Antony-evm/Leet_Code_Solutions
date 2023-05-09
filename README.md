@@ -69,6 +69,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Python](/Solutions/091.%20Decode%20Ways/solution.py)|
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Python](/Solutions/094.%20Binary%20Tree%20Inorder%20Traversal/solution.py)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Python](/Solutions/098.%20Validate%20Binary%20Search%20Tree/solution.py)|
+|100|[Same Tree](https://leetcode.com/problems/same-tree/)|[Python](/Solutions/100.%20Same%20Tree/solution.py)|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[Python](/Solutions/104.%20Maximum%20Depth%20of%20Binary%20Tree/solution.py)|
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Python](/Solutions/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node/solution.py)|
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Python](/Solutions/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II/solution.py)|
