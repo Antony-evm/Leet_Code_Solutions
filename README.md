@@ -77,7 +77,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Python](/Solutions/118.%20Pascal's%20Triangle/solution.py)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python](/Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/solution.py)|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Python](/Solutions/130.%20Surrounded%20Regions/solution.py)|
-|137|[Single Number II](https://leetcode.com/problems/single-number-ii)[Python](/Solutions/137.%20%Single%20Number%20II/solution.py)|
+|137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[Python](/Solutions/137.%20%Single%20Number%20II/solution.py)|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Python](/Solutions/139.%20Word%20Break/solution.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Python](/Solutions/141.%20Linked%20List%20Cycle/solution.py)|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Python](/Solutions/142.%20Linked%20List%20Cycle%20II/solution.py)|
