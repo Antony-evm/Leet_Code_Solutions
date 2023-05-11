@@ -8,7 +8,9 @@
 
 
 class Solution:
-    def intervalIntersection(self, fl: List[List[int]], sl: List[List[int]]) -> List[List[int]]:
+    def intervalIntersection(
+        self, fl: List[List[int]], sl: List[List[int]]
+    ) -> List[List[int]]:
         if not sl or not sl:
             return []
 

@@ -8,7 +8,9 @@
 
 
 class Solution:
-    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+    def floodFill(
+        self, image: List[List[int]], sr: int, sc: int, color: int
+    ) -> List[List[int]]:
         from collections import deque
 
         colored = deque()

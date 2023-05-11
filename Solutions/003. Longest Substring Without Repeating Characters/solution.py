@@ -9,7 +9,9 @@ class Solution:
         else:
             for i in range(len(s)):
                 for j in range(len(s[i:])):
-                    if (len(s[i : j + i + 1]) > maxx) & (len(s[i : j + i + 1]) == len(set(s[i : j + i + 1]))):
+                    if (len(s[i : j + i + 1]) > maxx) & (
+                        len(s[i : j + i + 1]) == len(set(s[i : j + i + 1]))
+                    ):
                         maxx = len(s[i : j + i + 1])
                         if maxx == 95:
                             return maxx

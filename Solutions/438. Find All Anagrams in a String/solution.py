@@ -8,7 +8,9 @@ class Solution:
         length = len(p)
         p = sorted(p)
         if length > 1:
-            potential = [idx for idx, letter in enumerate(s[: -length + 1]) if letter in p]
+            potential = [
+                idx for idx, letter in enumerate(s[: -length + 1]) if letter in p
+            ]
         if length == 1:
             return [idx for idx, letter in enumerate(s) if letter in p]
         res = []

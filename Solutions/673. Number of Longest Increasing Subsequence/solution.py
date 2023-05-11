@@ -9,7 +9,11 @@ class Solution:
             return 0
         n = len(nums) + 1
 
-        decks, ends_decks, paths = [[] for _ in range(n)], [float("inf")] * n, [[0] for _ in range(n)]
+        decks, ends_decks, paths = (
+            [[] for _ in range(n)],
+            [float("inf")] * n,
+            [[0] for _ in range(n)],
+        )
         for num in nums:
             idx = bisect.bisect_left(ends_decks, num)
             n_paths = 1

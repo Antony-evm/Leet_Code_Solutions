@@ -6,7 +6,9 @@
 
 
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         idxs = []
         if len(intervals) == 0:
             return [newInterval]
@@ -14,7 +16,11 @@ class Solution:
             if interval[0] > newInterval[1]:
                 break
             if (
-                (newInterval[0] >= interval[0] and newInterval[1] >= interval[1] and newInterval[0] <= interval[1])
+                (
+                    newInterval[0] >= interval[0]
+                    and newInterval[1] >= interval[1]
+                    and newInterval[0] <= interval[1]
+                )
                 or (newInterval[0] <= interval[0] and newInterval[1] >= interval[1])
                 or (newInterval[0] <= interval[0] and newInterval[1] <= interval[1])
                 or (newInterval[0] >= interval[0] and newInterval[1] <= interval[1])
@@ -24,7 +30,12 @@ class Solution:
         if idxs:
             intervals = (
                 intervals[: idxs[0]]
-                + [[min(intervals[idxs[0]][0], newInterval[0]), max(intervals[idxs[-1]][1], newInterval[1])]]
+                + [
+                    [
+                        min(intervals[idxs[0]][0], newInterval[0]),
+                        max(intervals[idxs[-1]][1], newInterval[1]),
+                    ]
+                ]
                 + intervals[idxs[-1] + 1 :]
             )
         else:

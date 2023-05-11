@@ -2,6 +2,7 @@
 
 # You must implement a solution with a linear runtime complexity and use only constant extra space.
 
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        return {k:v for v,k in Counter(nums).items()}[1]
+        return {k: v for v, k in Counter(nums).items()}[1]

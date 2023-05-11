@@ -24,22 +24,34 @@ class Solution:
                         while dq:
                             x, y = dq.popleft()
                             if x > 0:
-                                if grid[x - 1][y] == "1" and seen.get((x - 1, y), -1) == -1:
+                                if (
+                                    grid[x - 1][y] == "1"
+                                    and seen.get((x - 1, y), -1) == -1
+                                ):
                                     dq.append([x - 1, y])
                                 seen[(x - 1, y)] = 0
 
                             if x < rows - 1:
-                                if grid[x + 1][y] == "1" and seen.get((x + 1, y), -1) == -1:
+                                if (
+                                    grid[x + 1][y] == "1"
+                                    and seen.get((x + 1, y), -1) == -1
+                                ):
                                     dq.append([x + 1, y])
                                 seen[(x + 1, y)] = 0
 
                             if y > 0:
-                                if grid[x][y - 1] == "1" and seen.get((x, y - 1), -1) == -1:
+                                if (
+                                    grid[x][y - 1] == "1"
+                                    and seen.get((x, y - 1), -1) == -1
+                                ):
                                     dq.append([x, y - 1])
                                 seen[(x, y - 1)] = 0
 
                             if y < cols - 1:
-                                if grid[x][y + 1] == "1" and seen.get((x, y + 1), -1) == -1:
+                                if (
+                                    grid[x][y + 1] == "1"
+                                    and seen.get((x, y + 1), -1) == -1
+                                ):
                                     dq.append([x, y + 1])
                                 seen[(x, y + 1)] = 0
         return islands

@@ -12,7 +12,12 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         def count_occurences(openList: List, closeList: List, s: str) -> bool:
-            return all([s.count(openChar) == s.count(closeChar) for openChar, closeChar in zip(openList, closeList)])
+            return all(
+                [
+                    s.count(openChar) == s.count(closeChar)
+                    for openChar, closeChar in zip(openList, closeList)
+                ]
+            )
 
         marker = ""
 

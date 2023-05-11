@@ -14,7 +14,9 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+    def mergeTrees(
+        self, root1: Optional[TreeNode], root2: Optional[TreeNode]
+    ) -> Optional[TreeNode]:
         t1, t2 = root1, root2
         if not (t1 and t2):
             return t1 or t2

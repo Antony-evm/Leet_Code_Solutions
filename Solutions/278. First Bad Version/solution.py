@@ -20,4 +20,8 @@ class Solution:
             elif isBadVersion(mid) == True:
                 high = mid - 1
 
-        return (high + low) // 2 if isBadVersion((high + low) // 2) == True else (high + low) // 2 + 1
+        return (
+            (high + low) // 2
+            if isBadVersion((high + low) // 2) == True
+            else (high + low) // 2 + 1
+        )

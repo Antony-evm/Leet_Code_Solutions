@@ -4,21 +4,24 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
-  
+    def reverseBetween(
+        self, head: Optional[ListNode], left: int, right: int
+    ) -> Optional[ListNode]:
         l = []
         while head:
             l.append(head.val)
-            head=head.next
-        l[left-1:right] = l[left-1:right][::-1]
+            head = head.next
+        l[left - 1 : right] = l[left - 1 : right][::-1]
         head = None
         for i in l[::-1]:
-            head = ListNode(i,head)
+            head = ListNode(i, head)
         return head
 
-    
+
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+    def reverseBetween(
+        self, head: Optional[ListNode], left: int, right: int
+    ) -> Optional[ListNode]:
         def reverseN(head, n):
             if n == 1:
                 self.successor = head.next
@@ -32,11 +35,14 @@ class Solution:
 
         if left == 1:
             return reverseN(head, right)
-        head.next = self.reverseBetween(head.next, left -1, right -1)
+        head.next = self.reverseBetween(head.next, left - 1, right - 1)
         return head
 
+
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+    def reverseBetween(
+        self, head: Optional[ListNode], left: int, right: int
+    ) -> Optional[ListNode]:
         n1 = n2 = head
         prev = dummy = ListNode(0, head)
 

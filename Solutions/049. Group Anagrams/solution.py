@@ -9,7 +9,7 @@ class Solution:
         for s in strs:
             k = "".join(sorted(s))
             if k not in dictionary:
-                dictionary[k]=[s]
+                dictionary[k] = [s]
             else:
                 dictionary[k].append(s)
         return list(dictionary.values())

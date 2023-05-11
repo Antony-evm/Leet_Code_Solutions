@@ -4,7 +4,11 @@
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
         def slope(x1, x2):
-            return float("inf") if x2[0] - x1[0] == 0 else (x2[1] - x1[1]) / (x2[0] - x1[0])
+            return (
+                float("inf")
+                if x2[0] - x1[0] == 0
+                else (x2[1] - x1[1]) / (x2[0] - x1[0])
+            )
 
         if len(points) == 1:
             return 1
@@ -34,4 +38,6 @@ class Solution:
                         slopes[s].append([idx, left])
 
             left += 1
-        return max({i: max([len(j) for j in slopes[i]]) for i in slopes.keys()}.values())
+        return max(
+            {i: max([len(j) for j in slopes[i]]) for i in slopes.keys()}.values()
+        )

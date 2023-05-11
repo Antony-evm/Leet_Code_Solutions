@@ -14,7 +14,9 @@ class Solution:
 
         l, r = 0, len(nums)
         while l < r - 1:
-            if ((l == 0) or (l != 0 and nums[l] > nums[l - 1])) and nums[l] > nums[l + 1]:
+            if ((l == 0) or (l != 0 and nums[l] > nums[l - 1])) and nums[l] > nums[
+                l + 1
+            ]:
                 return l
             else:
                 if nums[l] <= nums[l + 1]:

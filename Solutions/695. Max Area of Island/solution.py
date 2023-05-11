@@ -27,20 +27,32 @@ class Solution:
                         temp_grid = island[0]
                         area += 1
                         island.popleft()
-                        if temp_grid[0] - 1 > -1 and [temp_grid[0] - 1, temp_grid[1]] not in areas:
+                        if (
+                            temp_grid[0] - 1 > -1
+                            and [temp_grid[0] - 1, temp_grid[1]] not in areas
+                        ):
                             if grid[temp_grid[0] - 1][temp_grid[1]] == 1:
                                 island.append([temp_grid[0] - 1, temp_grid[1]])
                             areas.append([temp_grid[0] - 1, temp_grid[1]])
 
-                        if temp_grid[0] + 1 < len(grid) and [temp_grid[0] + 1, temp_grid[1]] not in areas:
+                        if (
+                            temp_grid[0] + 1 < len(grid)
+                            and [temp_grid[0] + 1, temp_grid[1]] not in areas
+                        ):
                             if grid[temp_grid[0] + 1][temp_grid[1]] == 1:
                                 island.append([temp_grid[0] + 1, temp_grid[1]])
                             areas.append([temp_grid[0] + 1, temp_grid[1]])
-                        if temp_grid[1] - 1 > -1 and [temp_grid[0], temp_grid[1] - 1] not in areas:
+                        if (
+                            temp_grid[1] - 1 > -1
+                            and [temp_grid[0], temp_grid[1] - 1] not in areas
+                        ):
                             if grid[temp_grid[0]][temp_grid[1] - 1] == 1:
                                 island.append([temp_grid[0], temp_grid[1] - 1])
                             areas.append([temp_grid[0], temp_grid[1] - 1])
-                        if temp_grid[1] + 1 < len(grid[i]) and [temp_grid[0], temp_grid[1] + 1] not in areas:
+                        if (
+                            temp_grid[1] + 1 < len(grid[i])
+                            and [temp_grid[0], temp_grid[1] + 1] not in areas
+                        ):
                             if grid[temp_grid[0]][temp_grid[1] + 1] == 1:
                                 island.append([temp_grid[0], temp_grid[1] + 1])
                             areas.append([temp_grid[0], temp_grid[1] + 1])

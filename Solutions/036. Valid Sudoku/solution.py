@@ -32,7 +32,9 @@ class Solution:
             for col in range(0, 9, step):
                 triangle = [
                     i
-                    for i in itertools.chain(*[j[col : col + step] for j in board[row : row + step]])
+                    for i in itertools.chain(
+                        *[j[col : col + step] for j in board[row : row + step]]
+                    )
                     if i.isnumeric()
                 ]
                 if len(triangle) != len(set(triangle)):

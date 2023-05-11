@@ -9,4 +9,8 @@ class Solution:
         length = len(nums)
         if length == 0:
             return 0
-        return nums[length // 2] if len(nums) % 2 == 1 else (nums[length // 2] + nums[length // 2 - 1]) / 2
+        return (
+            nums[length // 2]
+            if len(nums) % 2 == 1
+            else (nums[length // 2] + nums[length // 2 - 1]) / 2
+        )

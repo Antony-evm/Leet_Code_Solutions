@@ -26,7 +26,9 @@ class Solution:
         res[0:k] = res[k - 1 :: -1]
         counter = 2
         while k * counter <= len(res):
-            res[k * (counter - 1) : k * counter] = res[k * counter - 1 : k * (counter - 1) - 1 : -1]
+            res[k * (counter - 1) : k * counter] = res[
+                k * counter - 1 : k * (counter - 1) - 1 : -1
+            ]
             counter += 1
         head = ListNode(res[0])
         curr = head

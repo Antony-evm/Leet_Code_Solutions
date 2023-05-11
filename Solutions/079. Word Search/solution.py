@@ -16,7 +16,13 @@ class Solution:
     def dfs(self, board, i, j, word):
         if len(word) == 0:
             return True
-        if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]) or word[0] != board[i][j]:
+        if (
+            i < 0
+            or i >= len(board)
+            or j < 0
+            or j >= len(board[0])
+            or word[0] != board[i][j]
+        ):
             return False
         tmp = board[i][j]
         board[i][j] = "#"

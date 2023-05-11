@@ -5,7 +5,18 @@
 
 class Solution:
     def multiply(self, num1: str, num2: str) -> str:
-        conversion = {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}
+        conversion = {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+        }
         n1 = 0
         n2 = 0
         for i in range(len(num1)):
@@ -25,7 +36,11 @@ class Solution:
             column = product % (10**magnitude_tracker) - tracker
             tracker = column
             product_string = (
-                list(conversion.keys())[list(conversion.values()).index(column // (10 ** (magnitude_tracker - 1)))]
+                list(conversion.keys())[
+                    list(conversion.values()).index(
+                        column // (10 ** (magnitude_tracker - 1))
+                    )
+                ]
                 + product_string
             )
             magnitude_tracker += 1
