@@ -70,6 +70,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |88|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Python](/Solutions/088.%20Merge%20Sorted%20Array/solution.py)|
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii/)|[Python](/Solutions/090.%20Subsets%20II/solution.py)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Python](/Solutions/091.%20Decode%20Ways/solution.py)|
+|92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|[Python](/Solutions/092.%20Reverse%20Linked%20List%20II/solution.py)
 |94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[Python](/Solutions/094.%20Binary%20Tree%20Inorder%20Traversal/solution.py)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|[Python](/Solutions/098.%20Validate%20Binary%20Search%20Tree/solution.py)|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)|[Python](/Solutions/100.%20Same%20Tree/solution.py)|
@@ -79,6 +80,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Python](/Solutions/118.%20Pascal's%20Triangle/solution.py)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python](/Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/solution.py)|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Python](/Solutions/130.%20Surrounded%20Regions/solution.py)|
+|136|[Single Number](https://leetcode.com/problems/single-number/)|[Python](/Solutions/136.%20Single%20Number/solution.py)
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[Python](/Solutions/137.%20Single%20Number%20II/solution.py)|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Python](/Solutions/139.%20Word%20Break/solution.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Python](/Solutions/141.%20Linked%20List%20Cycle/solution.py)|
