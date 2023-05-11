@@ -46,6 +46,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |46|[Permutations](https://leetcode.com/problems/permutations/)|[Python](/Solutions/046.%20Permutations/solution.py)|
 |47|[Permutations II](https://leetcode.com/problems/permutations-ii/)|[Python](/Solutions/047.%20Permutations%20II/solution.py)|
 |48|[Rotate Image](https://leetcode.com/problems/rotate-image/)|[Python](/Solutions/048.%20Rotate%20Image/solution.py)|
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Python](/Solutions/049.%20Group%20Anagrams/solution.py)
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Python](/Solutions/053.%20Maximum%20Subarray/solution.py)|
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Python](/Solutions/055.%20Jump%20Game/solution.py)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[Python](/Solutions/056.%20Merge%20Intervals/solution.py)|
