@@ -39,6 +39,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)|[Python](/Solutions/034.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/solution.py)|
 |35|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[Python](/Solutions/035.%20Search%20Insert%20Position/solution.py)|
 |36|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|[Python](/Solutions/036.%20Valid%20Sudoku/solution.py)|
+|37|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)|[Python](/Solutions/037.%20Sudoku%20Solver/solution.py)|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)|[Python](/Solutions/039.%20Combination%20Sum/solution.py)|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[Python](/Solutions/040.%20Combination%20Sum%20II/solution.py)|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)|[Python](/Solutions/043.%20Multiply%20Strings/solution.py)|
@@ -54,6 +55,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |58|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)|[Python](/Solutions/058.%20Length%20of%20Last%20Word/solution.py)|
 |61|[Rotate List](https://leetcode.com/problems/rotate-list/)|[Python](/Solutions/061.%20Rotate%20List/solution.py)|
 |62|[Unique Paths](https://leetcode.com/problems/unique-paths/)|[Python](/Solutions/062.%20Unique%20Paths/solution.py)|
+|64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/)|[Python](/Solutions/064.%20Minimum%20Path%20Sum/solution.py)|
 |66|[Plus One](https://leetcode.com/problems/plus-one/)|[Python](/Solutions/066.%20Plus%20One/solution.py)|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)|[Python](/Solutions/067.%20Add%20Binary/solution.py)|
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)|[Python](/Solutions/069.%20Sqrt(x)/solution.py)|
@@ -79,6 +81,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Python](/Solutions/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II/solution.py)|
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Python](/Solutions/118.%20Pascal's%20Triangle/solution.py)|
 |121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python](/Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/solution.py)|
+|120|[Triangle](https://leetcode.com/problems/triangle/description/)|[Python](/Solutions/120.%20Triangle/solution.py)|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Python](/Solutions/130.%20Surrounded%20Regions/solution.py)|
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Python](/Solutions/136.%20Single%20Number/solution.py)
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[Python](/Solutions/137.%20Single%20Number%20II/solution.py)|
