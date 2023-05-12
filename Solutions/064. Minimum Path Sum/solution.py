@@ -2,6 +2,7 @@
 
 # Note: You can only move either down or right at any point in time.
 
+
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         @cache
@@ -13,5 +14,3 @@ class Solution:
             return grid[i][j] + min(dp(i - 1, j), dp(i, j - 1))
 
         return dp(len(grid) - 1, len(grid[0]) - 1)
-
-        
