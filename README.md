@@ -92,8 +92,9 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|[Python](/Solutions/145.%20Binary%20Tree%20Postorder%20Traversal/solution.py)|
 |149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)|[Python](/Solutions/149.%20Max%20Points%20on%20a%20Line/solution.py)|
 |153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[Python](/Solutions/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/solution.py)|
-|162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/) |[Python](/Solutions/162.%20Find%20Peak%20Element/solution.py)|
-|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |[Python](/Solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/solution.py)|
+|162|[Find Peak Element](https://leetcode.com/problems/find-peak-element/)|[Python](/Solutions/162.%20Find%20Peak%20Element/solution.py)|
+|167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|[Python](/Solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/solution.py)|
+|169|[Majority Element](https://leetcode.com/problems/majority-element/)|[Python](/Solutions/169.%20Majority%20Element/solution.py)|
 |189|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Python](/Solutions/189.%20Rotate%20Array/solution.py)|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Python](/Solutions/191.%20Number%20of%201%20Bits/solution.py)|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Python](/Solutions/200.%20Number%20of%20Islands/solution.py)|
