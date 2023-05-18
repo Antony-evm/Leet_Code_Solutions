@@ -86,6 +86,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Python](/Solutions/136.%20Single%20Number/solution.py)
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii)|[Python](/Solutions/137.%20Single%20Number%20II/solution.py)|
 |139|[Word Break](https://leetcode.com/problems/word-break/)|[Python](/Solutions/139.%20Word%20Break/solution.py)|
+|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|[Python](/Solutions/138.%20Copy%20List%20with%20Random%20Pointer/solution.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|[Python](/Solutions/141.%20Linked%20List%20Cycle/solution.py)|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|[Python](/Solutions/142.%20Linked%20List%20Cycle%20II/solution.py)|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|[Python](/Solutions/144.%20Binary%20Tree%20Preorder%20Traversal/solution.py)|
