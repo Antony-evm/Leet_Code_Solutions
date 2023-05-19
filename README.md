@@ -118,6 +118,7 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |343|[Integer Break](https://leetcode.com/problems/integer-break/) |[Python](/Solutions/343.%20Integer%20Break/solution.py)|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/) |[Python](/Solutions/344.%20Reverse%20String/solution.py)|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) |[Python](/Solutions/350.%20Intersection%20of%20Two%20Arrays%20II/solution.py)|
+|380|[Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)|[Python](/Solutions/380.%20Insert%20Delete%GetRandom%20O1/solution.py)|
 |383|[Ransom Note](https://leetcode.com/problems/ransom-note/) |[Python](/Solutions/383.%20Ransom%20Note/solution.py)|
 |384|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) |[Python](/Solutions/384.%20Shuffle%20an%20Array/solution.py)|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) |[Python](/Solutions/387.%20First%20Unique%20Character%20in%20a%20String/solution.py)|
