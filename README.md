@@ -80,8 +80,9 @@ Taking on Leet Code Problems one at a time. This is my way to practice algorithm
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Python](/Solutions/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node/solution.py)|
 |117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Python](/Solutions/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II/solution.py)|
 |118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)|[Python](/Solutions/118.%20Pascal's%20Triangle/solution.py)|
-|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python](/Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/solution.py)|
 |120|[Triangle](https://leetcode.com/problems/triangle/description/)|[Python](/Solutions/120.%20Triangle/solution.py)|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[Python](/Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/solution.py)|
+|122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Python](/Solutions/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II/solution.py)|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[Python](/Solutions/125.%20Valid%20Palindrome/solution.py)|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[Python](/Solutions/130.%20Surrounded%20Regions/solution.py)|
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Python](/Solutions/136.%20Single%20Number/solution.py)
