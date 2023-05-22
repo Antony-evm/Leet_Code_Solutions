@@ -6,11 +6,10 @@
 # int getRandom() Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned.
 # You must implement the functions of the class such that each function works in average O(1) time complexity.
 
-class RandomizedSet:
 
+class RandomizedSet:
     def __init__(self):
         self.s = set()
-        
 
     def insert(self, val: int) -> bool:
         if val in self.s:
@@ -25,8 +24,6 @@ class RandomizedSet:
             return True
         else:
             return False
-        
 
     def getRandom(self) -> int:
         return choice(list(self.s))
-        
